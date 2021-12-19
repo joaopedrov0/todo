@@ -51,6 +51,16 @@ section.task-list .task .main .status.false:hover{
     cursor: pointer;
 }
 
+.task .status.true::before{
+    content: 'check';
+    color: green;
+}
+
+section.task-list .task .main .status.true:hover{
+    background-color: rgb(178, 235, 171);
+    cursor: pointer;
+}
+
 
 .task .prazo{
     border-bottom: 3px solid rgb(37, 175, 209);
