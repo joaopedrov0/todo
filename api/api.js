@@ -19,13 +19,13 @@ app.get('/', (req, res) => {
 
 app.get('/delete', (req, res) => {
     let data = storage
-    data.tasks.filter(
-        task => {
-            return task.id !== req.query.id
+    
+    for(let i = 0 ; i < data.tasks.length ; i++){
+        if(String(data.tasks[i].id) === String(req.query.id)){
+            data.tasks.splice(i, 1)
         }
-    )
-    console.log(data.tasks)
-
+    }
+    
     fs.writeFile(__dirname + "/tasks.json", JSON.stringify(data), 
         err => {
             if(err) throw err
