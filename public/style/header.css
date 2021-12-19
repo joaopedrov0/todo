@@ -1,0 +1,16 @@
+header{
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    background-color: rgb(37, 175, 209);
+}
+
+h1{
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    color: #fff;
+}

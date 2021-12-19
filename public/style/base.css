@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,500&display=swap');
+/*
+
+HOW TO USE FONTS
+
+Logo
+font-family: 'Montserrat', sans-serif;
+
+Content
+font-family: 'Open Sans', sans-serif;
+
+*/
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    overflow-x: hidden;
+}

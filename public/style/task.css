@@ -1,0 +1,57 @@
+.task{
+    width: 50vw;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px rgba(131, 131, 131, 0.41);
+    padding: 30px;
+
+    margin: 10px 0;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+.task hr{
+    opacity: 0.7;
+}
+
+.task .main{
+    font-size: 24px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.task .descricao{
+    background-color: rgb(230, 230, 230);
+    margin: 10px 0;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.task .prazo::before{
+    content: 'Prazo: ';
+}
+
+.task .status{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.task .status.false::before{
+    content: 'clear';
+    color: red;
+}
+
+section.task-list .task .main .status.false:hover{
+    background-color: rgb(253, 191, 191);
+    cursor: pointer;
+}
+
+
+.task .prazo{
+    border-bottom: 3px solid rgb(37, 175, 209);
+}
