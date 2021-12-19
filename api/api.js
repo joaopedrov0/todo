@@ -17,13 +17,14 @@ app.get('/', (req, res) => {
     return res.send(storage)
 })
 
-app.get('/delete/:id', (req, res) => {
+app.get('/delete', (req, res) => {
     let data = storage
     data.tasks.filter(
         task => {
-             String(task.id) !== String(req.params.id)
+            return task.id !== req.query.id
         }
     )
+    console.log(data.tasks)
 
     fs.writeFile(__dirname + "/tasks.json", JSON.stringify(data), 
         err => {
