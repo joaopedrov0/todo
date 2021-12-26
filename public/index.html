@@ -21,21 +21,21 @@
         <h1>To Do list</h1>
     </header>
     <div class="wrap">
-        <div class="form-add">
+        <form method="POST" action="/add" class="form-add">
             <input type="text" name="nome" id="nome" placeholder="Nome da tarefa">
             <input type="text" name="descricao" id="descricao" placeholder="Descrição">
             <input type="datetime-local" name="prazo" id="prazo" placeholder="Prazo">
-            <button onclick="add()">Adicionar</button>
-        </div>
+            <button type="submit">Adicionar</button>
+        </form>
         <section class="task-list">
             
         </section>
     </div>
 
-
-    <script src="javascript/add.js"></script>
-    <script src="javascript/remove.js"></script>
     <script src="javascript/request.js"></script>
+    <script>
+        takeTasks()
+    </script>
     
 </body>
 </html>

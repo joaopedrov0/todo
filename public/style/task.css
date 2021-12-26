@@ -2,12 +2,17 @@
     width: 50vw;
     border: none;
     border-radius: 20px;
-    box-shadow: 5px 5px 20px rgba(131, 131, 131, 0.41);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
     padding: 30px;
 
     margin: 10px 0;
 
     font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(121, 121, 121);
 }
 
 .task hr{
@@ -64,4 +69,11 @@ section.task-list .task .main .status.true:hover{
 
 .task .prazo{
     border-bottom: 3px solid rgb(37, 175, 209);
+}
+
+.footer-task{
+    display: flex;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
 }

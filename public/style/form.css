@@ -6,7 +6,7 @@
     justify-content: space-evenly;
     align-items: center;
 
-    box-shadow: 0px 5px 20px rgba(131, 131, 131, 0.61);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 input{
